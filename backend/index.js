@@ -16,4 +16,4 @@ app.use('/courses',courseRouter)
 app.use('/',registerRouter)
 
 
-app.listen('8000',console.log("server started at port 8000"))
+app.listen('8000',console.log("server started at port 8000"));;
