@@ -31,5 +31,4 @@ const addCoursesSlice = createSlice({
 
 });
 
-export const {} = addCoursesSlice.actions;
 export default addCoursesSlice.reducer;

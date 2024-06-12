@@ -5,7 +5,7 @@ const  addCoursesHandle = createAsyncThunk(
     async (email) => {
       console.log(email)
       try {
-       const response = await axios.get(`http://localhost:8000/courses/addcourses/${email}`)
+       const response = await axios.get(`https://coursifybynitin-production.up.railway.app/courses/addcourses/${email}`)
       
        return response.data.courses
        

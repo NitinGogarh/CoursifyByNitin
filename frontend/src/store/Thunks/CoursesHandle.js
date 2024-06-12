@@ -5,7 +5,7 @@ const  CoursesHandle = createAsyncThunk(
     async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/courses",
+          "https://coursifybynitin-production.up.railway.app/courses",
         );
       
         return  response.data;

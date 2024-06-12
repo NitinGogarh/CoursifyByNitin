@@ -6,7 +6,7 @@ const RegisterHandle = createAsyncThunk(
     async (userCredential) => {
       try {
         const response = await axios.post(
-          "http://localhost:8000/register",
+          "https://coursifybynitin-production.up.railway.app/register",
           userCredential
         );
         return { data: response.data, msg: response.data.msg };
