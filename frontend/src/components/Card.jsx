@@ -13,7 +13,7 @@ const Card = ({ course }) => {
    const {email} = JSON.parse(localStorage.getItem('user'))
    const addItem = async()=>{
     try {
-        await axios.post('http://localhost:8000/courses/addcourses',{
+        await axios.post('https://coursifybynitin-production-5b9e.up.railway.app/courses/addcourses',{
            email,
            data:course
         })

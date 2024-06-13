@@ -25,7 +25,7 @@ const EnrolledDetails = () => {
         const {email} = JSON.parse(localStorage.getItem('user'))
       try {
         
-        const response = await axios.post(`http://localhost:8000/progressreport/${id}`,{email});
+        const response = await axios.post(`https://coursifybynitin-production-5b9e.up.railway.app/progressreport/${id}`,{email});
         console.log(response)
          setTutorialValues(response.data)
       } catch (error) {
