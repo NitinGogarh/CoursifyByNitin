@@ -16,7 +16,7 @@ const CardDetails = () => {
     const { email } = JSON.parse(localStorage.getItem("user"));
     try {
       const response = await axios.post(
-        "http://localhost:8000/courses/enroll",
+        "https://coursifybynitin-production-5b9e.up.railway.app/courses/enroll",
         {
           email,
           data,

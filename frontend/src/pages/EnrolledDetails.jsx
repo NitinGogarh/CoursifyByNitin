@@ -39,7 +39,7 @@ const EnrolledDetails = () => {
      const {email} = JSON.parse(localStorage.getItem('user'))
      console.log(email)
     try {
-        await axios.post(`http://localhost:8000/progress/${id}`,{
+        await axios.post(`https://coursifybynitin-production-5b9e.up.railway.app/progress/${id}`,{
             email,tutorialValues
         })
         navigate('/enrolled')
