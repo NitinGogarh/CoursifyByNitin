@@ -48,7 +48,7 @@ const registerSlice = createSlice({
         state.error = action.payload;
       });
   },
-
+/*restart */
   extraReducers(builder) {
     builder
       .addCase(LoginHandle.pending, (state) => {
