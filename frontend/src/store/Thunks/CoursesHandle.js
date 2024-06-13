@@ -5,7 +5,7 @@ const  CoursesHandle = createAsyncThunk(
     async () => {
       try {
         const response = await axios.get(
-          "https://coursifybynitin-production.up.railway.app/courses",
+          "https://coursifybynitin-production-5b9e.up.railway.app/courses",
         );
       
         return  response.data;

@@ -5,7 +5,7 @@ const  LoginHandle = createAsyncThunk(
     async (userCredential) => {
       try {
         const response = await axios.post(
-          "https://coursifybynitin-production.up.railway.app/login",
+          "https://coursifybynitin-production-5b9e.up.railway.app/login",
           userCredential
         );
         localStorage.setItem('user',JSON.stringify(response.data.data));
